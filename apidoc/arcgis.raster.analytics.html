@@ -8,9 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>arcgis.raster.analytics module &mdash; arcgis 1.2.1 documentation</title>
+  <title>arcgis.raster.analytics module &mdash; arcgis 1.5.0 documentation</title>
   
 
+  
+  
   
   
 
@@ -35,10 +37,19 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="arcgis 1.2.1 documentation" href="index.html"/>
+    <link rel="top" title="arcgis 1.5.0 documentation" href="index.html"/>
         <link rel="up" title="arcgis.raster module" href="arcgis.raster.toc.html"/>
         <link rel="next" title="arcgis.raster.functions module" href="arcgis.raster.functions.html"/>
-        <link rel="prev" title="arcgis.raster module" href="arcgis.raster.toc.html"/> 
+        <link rel="prev" title="arcgis.raster module" href="arcgis.raster.toc.html"/>
+<!-- This code block is inserted close near the <head> tag. See http://bit.ly/2BHUQzB -->
+<!-- The point of this code block is to send us google analytics on website views -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJGGV5');</script>
+ 
+
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -47,6 +58,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -66,7 +78,7 @@
             
             
               <div class="version">
-                1.2.1
+                1.5.0
               </div>
             
           
@@ -87,7 +99,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">arcgis</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">arcgis</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="arcgis.gis.toc.html">arcgis.gis module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#gis">GIS</a></li>
@@ -97,6 +112,7 @@
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#datastore">Datastore</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#role">Role</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#layer">Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#groupapplication">GroupApplication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#contentmanager">ContentManager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#usermanager">UserManager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#groupmanager">GroupManager</a></li>
@@ -107,9 +123,13 @@
 <li class="toctree-l3"><a class="reference internal" href="arcgis.gis.admin.html">arcgis.gis.admin module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#agoladminmanager">AGOLAdminManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#portaladminmanager">PortalAdminManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#categorymanager">CategoryManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#collaborationmanager">CollaborationManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#collaboration">Collaboration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#creditmanager">CreditManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#license">License</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#licensemanager">LicenseManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#identityprovidermanager">IdentityProviderManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#passwordpolicy">PasswordPolicy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#portalresourcemanager">PortalResourceManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#ux">UX</a></li>
@@ -132,6 +152,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.gis.server.html">arcgis.gis.server module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#server">Server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#module-arcgis.gis.server.catalog">ServicesDirectory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#service">Service</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#machine">Machine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#report">Report</a></li>
@@ -149,6 +170,10 @@
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#systemmanager">SystemManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#sitemanager">SiteManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#directorymanager">DirectoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#configurationstore">ConfigurationStore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#jobs">Jobs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#serverdirectory">ServerDirectory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#serverproperties">ServerProperties</a></li>
 </ul>
 </li>
 </ul>
@@ -160,9 +185,11 @@
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#analysis-extent">analysis_extent</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#out-spatial-reference">out_spatial_reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#process-spatial-reference">process_spatial_reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#output-datastore">output_datastore</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#return-z">return_z</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#return-m">return_m</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#verbose">verbose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#default-aggregation-styles">default_aggregation_styles</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="arcgis.features.toc.html">arcgis.features module</a><ul>
@@ -172,6 +199,8 @@
 <li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#featurelayercollection">FeatureLayerCollection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#featureset">FeatureSet</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#featurecollection">FeatureCollection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#arcgis-features-geoaccessor">arcgis.features.GeoAccessor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#arcgis-features-geoseriesaccessor">arcgis.features.GeoSeriesAccessor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#spatialdataframe">SpatialDataFrame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#submodules">Submodules</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.features.analysis.html">arcgis.features.analysis module</a><ul>
@@ -204,6 +233,7 @@
 <li class="toctree-l3"><a class="reference internal" href="arcgis.features.analyze_patterns.html">arcgis.features.analyze_patterns module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.analyze_patterns.html#calculate-density">calculate_density</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.analyze_patterns.html#find-hot-spots">find_hot_spots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.features.analyze_patterns.html#find-outliers">find_outliers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.analyze_patterns.html#interpolate-points">interpolate_points</a></li>
 </ul>
 </li>
@@ -230,6 +260,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.features.summarize_data.html">arcgis.features.summarize_data module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.summarize_data.html#aggregate-points">aggregate_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.features.summarize_data.html#join-features">join_features</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.summarize_data.html#summarize-nearby">summarize_nearby</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.summarize_data.html#summarize-within">summarize_within</a></li>
 </ul>
@@ -261,6 +292,9 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="arcgis.raster.toc.html">arcgis.raster module</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="arcgis.raster.toc.html#imagerylayer">ImageryLayer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.raster.toc.html#rastercatalogitem">RasterCatalogItem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.raster.toc.html#rastermanager">RasterManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.raster.toc.html#imagerytilemanager">ImageryTileManager</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="arcgis.raster.toc.html#submodules">Submodules</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">arcgis.raster.analytics module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#get-datastores">get_datastores</a></li>
@@ -276,6 +310,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#convert-feature-to-raster">convert_feature_to_raster</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#convert-raster-to-feature">convert_raster_to_feature</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#copy-raster">copy_raster</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-image-collection">create_image_collection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-image">add_image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#delete-image">delete_image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#delete-image-collection">delete_image_collection</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.raster.functions.html">arcgis.raster.functions module</a><ul>
@@ -308,6 +346,9 @@
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#classify">classify</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#clip">clip</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#colormap">colormap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#colormap-to-rgb">colormap_to_rgb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#colorspace-conversion">colorspace_conversion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#complex">complex</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#composite-band">composite_band</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#con">con</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#contrast-brightness">contrast_brightness</a></li>
@@ -324,16 +365,18 @@
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#exp2">exp2</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#expression">expression</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#extract-band">extract_band</a></li>
-<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#float">float</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#float">FLOAT</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#float-divide">float_divide</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#floor-divide">floor_divide</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#gemi">gemi</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#geometric">geometric</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#grayscale">grayscale</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#greater-than">greater_than</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#greater-than-equal">greater_than_equal</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#gvitm">gvitm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#hillshade">hillshade</a></li>
-<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#int">int</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#identity">identity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#int">INT</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#is-null">is_null</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#less-than">less_than</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#less-than-equal">less_than_equal</a></li>
@@ -353,14 +396,16 @@
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#mod">mod</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#mode">mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#msavi">msavi</a></li>
-<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#multiply">multiply</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#multiply">MULTIPLY</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#ndvi">ndvi</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#negate">negate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#not-equal">not_equal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#pansharpen">pansharpen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#plus">plus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#power">power</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#pvi">pvi</a></li>
-<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#range">range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#cellstats-range">cellstats_range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#raster-calculator">raster_calculator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#remap">remap</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#resample">resample</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#round-down">round_down</a></li>
@@ -372,22 +417,64 @@
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#sin">sin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#sinh">sinh</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#slope">slope</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#spectral-conversion">spectral_conversion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#speckle">speckle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#sqrt">sqrt</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#square">square</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#focal-statistics">focal_statistics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#statistics-histogram">statistics_histogram</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#std">std</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#stretch">stretch</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#sultan">sultan</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#sum">sum</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#tan">tan</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#tanh">tanh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#tasseled-cap">tasseled_cap</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#threshold">threshold</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#times">times</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#transpose-bits">transpose_bits</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#tsavi">tsavi</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#unit-conversion">unit_conversion</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#variety">variety</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#vector-field">vector_field</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#vector-field-renderer">vector_field_renderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#weighted-overlay">weighted_overlay</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#weighted-sum">weighted_sum</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcgis.raster.functions.gbl.html">arcgis.raster.functions.gbl module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#cost-allocation">cost_allocation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#cost-distance">cost_distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#euclidean-allocation">euclidean_allocation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#euclidean-distance">euclidean_distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#fill">fill</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#flow-accumulation">flow_accumulation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#flow-distance">flow_distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#flow-direction">flow_direction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#least-cost-path">least_cost_path</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#nibble">nibble</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#stream-link">stream_link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#watershed">watershed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#zonal-statistics">zonal_statistics</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcgis.raster.orthomapping.html">arcgis.raster.orthomapping module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#is-supported">is_supported</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#compute-sensor-model">compute_sensor_model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#alter-processing-states">alter_processing_states</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#get-processing-states">get_processing_states</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#match-control-points">match_control_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#color-correction">color_correction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#compute-control-points">compute_control_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#compute-seamlines">compute_seamlines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#edit-control-points">edit_control_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#generate-dem">generate_dem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#generate-orthomosaic">generate_orthomosaic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#generate-report">generate_report</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#query-camera-info">query_camera_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#query-control-points">query_control_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#reset-image-collection">reset_image_collection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#compute-spatial-reference-factory-code">compute_spatial_reference_factory_code</a></li>
 </ul>
 </li>
 </ul>
@@ -426,15 +513,22 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.geoanalytics.find_locations.html">arcgis.geoanalytics.find_locations module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.find_locations.html#detect-incidents">detect_incidents</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.find_locations.html#find-similar-locations">find_similar_locations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.find_locations.html#geocode-locations">geocode_locations</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html">arcgis.geoanalytics.manage_data module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html#append-data">append_data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html#calculate-fields">calculate_fields</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html#clip-layer">clip_layer</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html#copy-to-data-store">copy_to_data_store</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html#overlay-data">overlay_data</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html">arcgis.geoanalytics.summarize_data module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html#aggregate-points">aggregate_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html#build-multivariable-grid">build_multivariable_grid</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html#join-features">join_features</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html#reconstruct-tracks">reconstruct_tracks</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html#summarize-attributes">summarize_attributes</a></li>
@@ -453,9 +547,20 @@
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#geocoder">Geocoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#get-geocoders">get_geocoders</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#geocode">geocode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#geocode-from-items">geocode_from_items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#analyze-geocode-input">analyze_geocode_input</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#reverse-geocode">reverse_geocode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#batch-geocode">batch_geocode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#suggest">suggest</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcgis.geoenrichment.html">arcgis.geoenrichment module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#country">Country</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#get-countries">get_countries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#create-report">create_report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#enrich">enrich</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#find-businesses">find_businesses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#standard-geography-query">standard_geography_query</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="arcgis.geometry.html">arcgis.geometry module</a><ul>
@@ -512,10 +617,12 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="arcgis.mapping.html">arcgis.mapping module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#webmap">WebMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#offlinemapareamanager">OfflineMapAreaManager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#webscene">WebScene</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#mapimagelayer">MapImageLayer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#mapimagelayermanager">MapImageLayerManager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#vectortilelayer">VectorTileLayer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#scenelayer">SceneLayer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#export-map">export_map</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#get-layout-templates">get_layout_templates</a></li>
 </ul>
@@ -532,6 +639,31 @@
 <li class="toctree-l2"><a class="reference internal" href="arcgis.widgets.html#mapview">MapView</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="arcgis.apps.html">arcgis.apps module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.apps.html#build-collector-url">build_collector_url</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.apps.html#build-explorer-url">build_explorer_url</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.apps.html#build-navigator-url">build_navigator_url</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.apps.html#build-survey123-url">build_survey123_url</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.apps.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcgis.apps.workforce.html">arcgis.apps.workforce module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#assignment">Assignment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#assignmenttype">AssignmentType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#attachment">Attachment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#dispatcher">Dispatcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#project">Project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#track">Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#worker">Worker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcgis.apps.storymap.html">arcgis.apps.storymap module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.storymap.html#journalstorymap">JournalStoryMap</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             
@@ -544,8 +676,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">arcgis</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">arcgis</a>
+        
       </nav>
 
 
@@ -554,30 +688,50 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
           <li><a href="arcgis.raster.toc.html">arcgis.raster module</a> &raquo;</li>
-      
-    <li>arcgis.raster.analytics module</li>
+        
+      <li>arcgis.raster.analytics module</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/arcgis.raster.analytics.txt" rel="nofollow"> View page source</a>
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
+<!-- This code block is inserted close near the <body> tag. See http://bit.ly/2BHUQzB -->
+<!-- The point of this code block is to send us google analytics on website views -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJGGV5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
   <div class="section" id="arcgis-raster-analytics-module">
 <h1>arcgis.raster.analytics module<a class="headerlink" href="#arcgis-raster-analytics-module" title="Permalink to this headline">¶</a></h1>
 <span class="target" id="module-arcgis.raster.analytics"></span><p>Functions for calling the Raster Analysis Tools. The RasterAnalysisTools service is used by ArcGIS Server to provide distributed raster analysis.</p>
@@ -587,7 +741,7 @@
 <dt id="arcgis.raster.analytics.get_datastores">
 <code class="descclassname">analytics.</code><code class="descname">get_datastores</code><span class="sig-paren">(</span><em>gis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#arcgis.raster.analytics.get_datastores" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a helper object to manage raster analytics datastores in the GIS.
-If a gis isn&#8217;t specified, returns datastore manager of arcgis.env.active_gis</p>
+If a gis isn’t specified, returns datastore manager of arcgis.env.active_gis</p>
 </dd></dl>
 
 </div>
@@ -596,7 +750,7 @@ If a gis isn&#8217;t specified, returns datastore manager of arcgis.env.active_g
 <dl class="method">
 <dt id="arcgis.raster.analytics.is_supported">
 <code class="descclassname">analytics.</code><code class="descname">is_supported</code><span class="sig-paren">(</span><em>gis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#arcgis.raster.analytics.is_supported" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns True if the GIS supports raster analytics. If a gis isn&#8217;t specified,
+<dd><p>Returns True if the GIS supports raster analytics. If a gis isn’t specified,
 checks if arcgis.env.active_gis supports raster analytics</p>
 </dd></dl>
 
@@ -610,8 +764,8 @@ checks if arcgis.env.active_gis supports raster analytics</p>
 <p>function_arguments : Optional,  for specifying input Raster alone, portal Item can be passed</p>
 <p>output_raster_properties : Optional</p>
 <dl class="docutils">
-<dt>output_name</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster. </span><dd><p class="first">You can pass in an existing Image Service Item from your GIS to use that instead.</p>
+<dt>output_name <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster. </span></dt>
+<dd><p class="first">You can pass in an existing Image Service Item from your GIS to use that instead.</p>
 <p>Alternatively, you can pass in the name of the output Image Service that should be created by this method to be
 used as the output for the tool.</p>
 <p class="last">A RuntimeError is raised if a service by that name already exists</p>
@@ -629,77 +783,73 @@ used as the output for the tool.</p>
 <code class="descclassname">analytics.</code><code class="descname">interpolate_points</code><span class="sig-paren">(</span><em>input_point_features</em>, <em>interpolate_field</em>, <em>optimize_for='BALANCE'</em>, <em>transform_data=False</em>, <em>size_of_local_models=None</em>, <em>number_of_neighbors=None</em>, <em>output_cell_size=None</em>, <em>output_prediction_error=False</em>, <em>output_name=None</em>, <em>gis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#arcgis.raster.analytics.interpolate_points" title="Permalink to this definition">¶</a></dt>
 <dd><p>This tool allows you to predict values at new locations based on measurements from a collection of points. The tool
 takes point data with values at each point and returns a raster of predicted values:</p>
-<ul>
+<ul class="simple">
 <li><dl class="first docutils">
 <dt>An air quality management district has sensors that measure pollution levels. Interpolate Points can be used to</dt>
-<dd><p class="first last">predict pollution levels at locations that don&#8217;t have sensors, such as locations with at-risk populations-
-schools or hospitals, for example.</p>
-</dd>
+<dd>predict pollution levels at locations that don’t have sensors, such as locations with at-risk populations-
+schools or hospitals, for example.</dd>
 </dl>
 </li>
-<li><p class="first">Predict heavy metal concentrations in crops based on samples taken from individual plants.</p>
-</li>
+<li>Predict heavy metal concentrations in crops based on samples taken from individual plants.</li>
 <li><dl class="first docutils">
 <dt>Predict soil nutrient levels (nitrogen, phosphorus, potassium, and so on) and other indicators (such as electrical</dt>
-<dd><p class="first last">conductivity) in order to study their relationships to crop yield and prescribe precise amounts of fertilizer
-for each location in the field.</p>
-</dd>
+<dd>conductivity) in order to study their relationships to crop yield and prescribe precise amounts of fertilizer
+for each location in the field.</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>Meteorological applications include prediction of temperatures, rainfall, and associated variables (such as acid</dt>
-<dd><p class="first last">rain).</p>
-</dd>
+<dd>rain).</dd>
 </dl>
 </li>
 </ul>
 <dl class="docutils">
-<dt>input_point_features</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Required point layer containing locations with known values</span><dd>The point layer that contains the points where the values have been measured.</dd>
-<dt>interpolate_field</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Required string -  field to interpolate</span><dd>Choose the field whose values you wish to interpolate. The field must be numeric.</dd>
-<dt>optimize_for</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional string - Choose your preference for speed versus accuracy.</span><dd>More accurate predictions take longer to calculate. This parameter alters the default values of several other
+<dt>input_point_features <span class="classifier-delimiter">:</span> <span class="classifier">Required point layer containing locations with known values</span></dt>
+<dd>The point layer that contains the points where the values have been measured.</dd>
+<dt>interpolate_field <span class="classifier-delimiter">:</span> <span class="classifier">Required string -  field to interpolate</span></dt>
+<dd>Choose the field whose values you wish to interpolate. The field must be numeric.</dd>
+<dt>optimize_for <span class="classifier-delimiter">:</span> <span class="classifier">Optional string - Choose your preference for speed versus accuracy.</span></dt>
+<dd>More accurate predictions take longer to calculate. This parameter alters the default values of several other
 parameters of Interpolate Points in order to optimize speed of calculation, accuracy of results, or a balance of
 the two. By default, the tool will optimize for balance.
-One of the following: [&#8216;SPEED&#8217;, &#8216;BALANCE&#8217;, &#8216;ACCURACY&#8217;]</dd>
-<dt>transform_data</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional bool - Choose whether to transform your data to the normal distribution.</span><dd>Interpolation is most accurate for data that follows a normal (bell-shaped) distribution. If your data does not
+One of the following: [‘SPEED’, ‘BALANCE’, ‘ACCURACY’]</dd>
+<dt>transform_data <span class="classifier-delimiter">:</span> <span class="classifier">Optional bool - Choose whether to transform your data to the normal distribution.</span></dt>
+<dd>Interpolation is most accurate for data that follows a normal (bell-shaped) distribution. If your data does not
 appear to be normally distributed, you should perform a transformation.</dd>
-<dt>size_of_local_models</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional int - Size of local models</span><dd>Interpolate Points works by building local interpolation models that are mixed together to create the final
+<dt>size_of_local_models <span class="classifier-delimiter">:</span> <span class="classifier">Optional int - Size of local models</span></dt>
+<dd>Interpolate Points works by building local interpolation models that are mixed together to create the final
 prediction map. This parameter controls how many points will be contained in each local model. Smaller values
 will make results more local and can reveal small-scale effects, but it may introduce some instability in the
 calculations. Larger values will be more stable, but some local effects may be missed.
 The value can range from 30 to 500, but typical values are between 50 and 200.</dd>
-<dt>number_of_neighbors</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional int - Number of Neighbors</span><dd>Predictions are calculated based on neighboring points. This parameter controls how many points will be used in
+<dt>number_of_neighbors <span class="classifier-delimiter">:</span> <span class="classifier">Optional int - Number of Neighbors</span></dt>
+<dd>Predictions are calculated based on neighboring points. This parameter controls how many points will be used in
 the calculation. Using a larger number of neighbors will generally produce more accurate results, but the
 results take longer to calculate.
 This value can range from 1 to 64, but typical values are between 5 and 15.</dd>
-<dt>output_cell_size</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional LinearUnit - Output cell size</span><dd>Enter the cell size and unit for the output rasters.
+<dt>output_cell_size <span class="classifier-delimiter">:</span> <span class="classifier">Optional LinearUnit - Output cell size</span></dt>
+<dd>Enter the cell size and unit for the output rasters.
 The available units are Feet, Miles, Meters, and Kilometers.</dd>
-<dt>output_prediction_error</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional bool - Output prediction error</span><dd>Choose whether you want to create a raster of standard errors for the predicted values.
+<dt>output_prediction_error <span class="classifier-delimiter">:</span> <span class="classifier">Optional bool - Output prediction error</span></dt>
+<dd>Choose whether you want to create a raster of standard errors for the predicted values.
 Standard errors are useful because they provide information about the reliability of the predicted values.
 A simple rule of thumb is that the true value will fall within two standard errors of the predicted value 95
 percent of the time. For example, suppose a new location gets a predicted value of 50 with a standard error of
-5. This means that this tool&#8217;s best guess is that the true value at that location is 50, but it reasonably could
+5. This means that this tool’s best guess is that the true value at that location is 50, but it reasonably could
 be as low as 40 or as high as 60. To calculate this range of reasonable values, multiply the standard error by
 2, add this value to the predicted value to get the upper end of the range, and subtract it from the predicted
 value to get the lower end of the range.</dd>
-<dt>output_name</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span><dd>You can pass in an existing Image Service Item from your GIS to use that instead.
+<dt>output_name <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span></dt>
+<dd>You can pass in an existing Image Service Item from your GIS to use that instead.
 Alternatively, you can pass in the name of the output Image Service that should be created by this method to be used as the output for the tool.
 A RuntimeError is raised if a service by that name already exists</dd>
 </dl>
 <p>gis: Optional, the GIS on which this tool runs. If not specified, the active GIS is used.</p>
 <dl class="docutils">
 <dt>dict with the following keys:</dt>
-<dd>&#8220;output_raster&#8221; : layer
-&#8220;output_error_raster&#8221; : layer
-&#8220;process_info&#8221; : layer</dd>
+<dd>“output_raster” : layer
+“output_error_raster” : layer
+“process_info” : layer</dd>
 </dl>
 </dd></dl>
 
@@ -713,8 +863,8 @@ A RuntimeError is raised if a service by that name already exists</dd>
 <p>input_elevation_surface : Required string</p>
 <p>input_observer_features : Required FeatureSet</p>
 <dl class="docutils">
-<dt>optimize_for</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional string</span><dd>One of the following: [&#8216;SPEED&#8217;, &#8216;ACCURACY&#8217;]</dd>
+<dt>optimize_for <span class="classifier-delimiter">:</span> <span class="classifier">Optional string</span></dt>
+<dd>One of the following: [‘SPEED’, ‘ACCURACY’]</dd>
 </dl>
 <p>maximum_viewing_distance : Optional LinearUnit</p>
 <p>maximum_viewing_distance_field : Optional string</p>
@@ -729,16 +879,16 @@ A RuntimeError is raised if a service by that name already exists</dd>
 <p>target_height_field : Optional string</p>
 <p>above_ground_level_output_name : Optional string</p>
 <dl class="docutils">
-<dt>output_name</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span><dd>You can pass in an existing Image Service Item from your GIS to use that instead.
+<dt>output_name <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span></dt>
+<dd>You can pass in an existing Image Service Item from your GIS to use that instead.
 Alternatively, you can pass in the name of the output Image Service that should be created by this method to be used as the output for the tool.
 A RuntimeError is raised if a service by that name already exists</dd>
 </dl>
 <p>gis: Optional, the GIS on which this tool runs. If not specified, the active GIS is used.</p>
 <dl class="docutils">
 <dt>dict with the following keys:</dt>
-<dd>&#8220;output_raster&#8221; : layer
-&#8220;output_above_ground_level_raster&#8221; : layer</dd>
+<dd>“output_raster” : layer
+“output_above_ground_level_raster” : layer</dd>
 </dl>
 </dd></dl>
 
@@ -749,31 +899,31 @@ A RuntimeError is raised if a service by that name already exists</dd>
 <dt id="arcgis.raster.analytics.summarize_raster_within">
 <code class="descclassname">analytics.</code><code class="descname">summarize_raster_within</code><span class="sig-paren">(</span><em>input_zone_layer</em>, <em>input_raster_layer_to_summarize</em>, <em>zone_field='Value'</em>, <em>statistic_type='Mean'</em>, <em>ignore_missing_values=True</em>, <em>output_name=None</em>, <em>gis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#arcgis.raster.analytics.summarize_raster_within" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
-<dt>input_zone_layer</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Required layer - area layer to summarize a raster layer within defined boundaries.</span><dd>The layer that defines the boundaries of the areas, or zones, that will be summarized.
+<dt>input_zone_layer <span class="classifier-delimiter">:</span> <span class="classifier">Required layer - area layer to summarize a raster layer within defined boundaries.</span></dt>
+<dd>The layer that defines the boundaries of the areas, or zones, that will be summarized.
 The layer can be a raster or feature data. For rasters, the zones are defined by all locations in the input that
 have the same cell value. The areas do not have to be contiguous.</dd>
-<dt>input_raster_layer_to_summarize</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Required  - raster layer to summarize.</span><dd>The raster cells in this layer will be summarized by the areas (zones) that they fall within.</dd>
-<dt>zone_field</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Required string -  field to define the boundaries. This is the attribute of the layer that will be used</span><dd>to define the boundaries of the areas. For example, suppose the first input layer defines the management unit
+<dt>input_raster_layer_to_summarize <span class="classifier-delimiter">:</span> <span class="classifier">Required  - raster layer to summarize.</span></dt>
+<dd>The raster cells in this layer will be summarized by the areas (zones) that they fall within.</dd>
+<dt>zone_field <span class="classifier-delimiter">:</span> <span class="classifier">Required string -  field to define the boundaries. This is the attribute of the layer that will be used</span></dt>
+<dd>to define the boundaries of the areas. For example, suppose the first input layer defines the management unit
 boundaries, with attributes that define the region, the district, and the parcel ID of each unit. You also have
 a raster layer defining a biodiversity index for each location. With the field you select, you can decide to
 calculate the average biodiversity at local, district, or regional levels.</dd>
-<dt>statistic_type</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional string - statistic to calculate.</span><dd>You can calculate statistics of any numerical attribute of the points, lines, or areas within the input area
+<dt>statistic_type <span class="classifier-delimiter">:</span> <span class="classifier">Optional string - statistic to calculate.</span></dt>
+<dd>You can calculate statistics of any numerical attribute of the points, lines, or areas within the input area
 layer. The available statistics types when the selected field is integer are
 Mean, Maximum, Median, Minimum, Minority, Range, Standard deviation(STD), Sum, and Variety. If the field is
 floating point, the options are Mean, Maximum, Minimum, Range, Standard deviation, and Sum.
 One of the following:
-[&#8216;Mean&#8217;, &#8216;Majority&#8217;, &#8216;Maximum&#8217;, &#8216;Median&#8217;, &#8216;Minimum&#8217;, &#8216;Minority&#8217;, &#8216;Range&#8217;, &#8216;STD&#8217;, &#8216;SUM&#8217;, &#8216;Variety&#8217;]</dd>
-<dt>ignore_missing_values</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional bool.</span><dd>If you choose to ignore missing values, only the cells that have a value in the layer to be summarized will be
+[‘Mean’, ‘Majority’, ‘Maximum’, ‘Median’, ‘Minimum’, ‘Minority’, ‘Range’, ‘STD’, ‘SUM’, ‘Variety’]</dd>
+<dt>ignore_missing_values <span class="classifier-delimiter">:</span> <span class="classifier">Optional bool.</span></dt>
+<dd>If you choose to ignore missing values, only the cells that have a value in the layer to be summarized will be
 used in determining the output value for that area. Otherwise, if there are missing values anywhere in an area,
 it is deemed that there is insufficient information to perform statistical calculations for all the cells in
 that zone, and that area will receive a null (NoData) value in the output.</dd>
-<dt>output_name</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span><dd>You can pass in an existing Image Service Item from your GIS to use that instead.
+<dt>output_name <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span></dt>
+<dd>You can pass in an existing Image Service Item from your GIS to use that instead.
 Alternatively, you can pass in the name of the output Image Service that should be created by this method to be used as the output for the tool.
 A RuntimeError is raised if a service by that name already exists</dd>
 </dl>
@@ -817,28 +967,28 @@ forest fires.</li>
 be constructed.</li>
 </ul>
 <dl class="docutils">
-<dt>input_point_or_line_features</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Required feature layer - The input point or line layer that will be used to calculate</span><dd>the density layer.</dd>
-<dt>count_field</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional string - count field</span><dd>Provide a field specifying the number of incidents at each location. For example, if you have points that
+<dt>input_point_or_line_features <span class="classifier-delimiter">:</span> <span class="classifier">Required feature layer - The input point or line layer that will be used to calculate</span></dt>
+<dd>the density layer.</dd>
+<dt>count_field <span class="classifier-delimiter">:</span> <span class="classifier">Optional string - count field</span></dt>
+<dd>Provide a field specifying the number of incidents at each location. For example, if you have points that
 represent cities, you can use a field representing the population of the city as the count field, and the
 resulting population density layer will calculate larger population densities near cities with
 larger populations. If the default choice of None is used, then each location will be assumed to represent a
 single count.</dd>
-<dt>search_distance</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional LinearUnit - Search distance</span><dd>Enter a distance specifying how far to search to find point or line features when calculating density values.
+<dt>search_distance <span class="classifier-delimiter">:</span> <span class="classifier">Optional LinearUnit - Search distance</span></dt>
+<dd>Enter a distance specifying how far to search to find point or line features when calculating density values.
 For example, if you provide a search distance of 10,000 meters, the density of any location in the output layer
 is calculated based on features that are within 10,000 meters of the location. Any location that does not have
 any incidents within 10,000 meters will receive a density value of zero.
 If no distance is provided, a default will be calculated that is based on the locations of the input features
 and the values in the count field (if a count field is provided).</dd>
-<dt>output_area_units</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional string - Output area units</span><dd>Specify the output area unit. Density is count divided by area, and this parameter specifies the unit of the
+<dt>output_area_units <span class="classifier-delimiter">:</span> <span class="classifier">Optional string - Output area units</span></dt>
+<dd>Specify the output area unit. Density is count divided by area, and this parameter specifies the unit of the
 area in the density calculation. The available areal units are Square Miles and Square Kilometers.</dd>
-<dt>output_cell_size</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional LinearUnit - Output cell size</span><dd>Enter the cell size and unit for the output rasters.</dd>
-<dt>output_name</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span><dd>You can pass in an existing Image Service Item from your GIS to use that instead.
+<dt>output_cell_size <span class="classifier-delimiter">:</span> <span class="classifier">Optional LinearUnit - Output cell size</span></dt>
+<dd>Enter the cell size and unit for the output rasters.</dd>
+<dt>output_name <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span></dt>
+<dd>You can pass in an existing Image Service Item from your GIS to use that instead.
 Alternatively, you can pass in the name of the output Image Service that should be created by this method to be used as the output for the tool.
 A RuntimeError is raised if a service by that name already exists</dd>
 </dl>
@@ -856,8 +1006,8 @@ A RuntimeError is raised if a service by that name already exists</dd>
 <p>input_classifier_definition : Required string</p>
 <p>additional_input_raster : Optional string</p>
 <dl class="docutils">
-<dt>output_name</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span><dd>You can pass in an existing Image Service Item from your GIS to use that instead.
+<dt>output_name <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span></dt>
+<dd>You can pass in an existing Image Service Item from your GIS to use that instead.
 Alternatively, you can pass in the name of the output Image Service that should be created by this method to be used as the output for the tool.
 A RuntimeError is raised if a service by that name already exists</dd>
 </dl>
@@ -878,8 +1028,8 @@ A RuntimeError is raised if a service by that name already exists</dd>
 <p>band_indexes : Required string</p>
 <p>remove_tiling_artifacts : Required string</p>
 <dl class="docutils">
-<dt>output_name</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span><dd>You can pass in an existing Image Service Item from your GIS to use that instead.
+<dt>output_name <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span></dt>
+<dd>You can pass in an existing Image Service Item from your GIS to use that instead.
 Alternatively, you can pass in the name of the output Image Service that should be created by this method to be used as the output for the tool.
 A RuntimeError is raised if a service by that name already exists</dd>
 </dl>
@@ -915,13 +1065,14 @@ the type of output raster. If the field is integer, the output raster will be in
 if it is floating point, the output will be floating point.</p>
 <p>input_feature : Required. The input feature layer to convert to a raster dataset.</p>
 <dl class="docutils">
-<dt>output_cell_size</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Required LinearUnit. The cell size and unit for the output rasters.</span><dd>The available units are Feet, Miles, Meters, and Kilometers.</dd>
+<dt>output_cell_size <span class="classifier-delimiter">:</span> <span class="classifier">Required LinearUnit. The cell size and unit for the output rasters.</span></dt>
+<dd>The available units are Feet, Miles, Meters, and Kilometers.
+eg - {“distance”:60,”units”:meters}</dd>
 </dl>
 <p>value_field : Optional string.  The field that will be used to assign values to the output raster.</p>
 <dl class="docutils">
-<dt>output_name</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional. The name of the layer that will be created in My Content.</span><dd>If not provided, an Image Service is created by the method and used as the output raster.
+<dt>output_name <span class="classifier-delimiter">:</span> <span class="classifier">Optional. The name of the layer that will be created in My Content.</span></dt>
+<dd>If not provided, an Image Service is created by the method and used as the output raster.
 You can pass in an existing Image Service Item from your GIS to use that instead.
 Alternatively, you can pass in the name of the output Image Service that should be created by this method to be used as the output for the tool.
 A RuntimeError is raised if a service by that name already exists</dd>
@@ -935,21 +1086,22 @@ A RuntimeError is raised if a service by that name already exists</dd>
 <h2>convert_raster_to_feature<a class="headerlink" href="#convert-raster-to-feature" title="Permalink to this headline">¶</a></h2>
 <dl class="method">
 <dt id="arcgis.raster.analytics.convert_raster_to_feature">
-<code class="descclassname">analytics.</code><code class="descname">convert_raster_to_feature</code><span class="sig-paren">(</span><em>input_raster</em>, <em>field='Value'</em>, <em>output_type='Point'</em>, <em>simplify_lines_or_polygons=True</em>, <em>output_name=None</em>, <em>gis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#arcgis.raster.analytics.convert_raster_to_feature" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">analytics.</code><code class="descname">convert_raster_to_feature</code><span class="sig-paren">(</span><em>input_raster</em>, <em>field='Value'</em>, <em>output_type='Polygon'</em>, <em>simplify=True</em>, <em>output_name=None</em>, <em>gis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#arcgis.raster.analytics.convert_raster_to_feature" title="Permalink to this definition">¶</a></dt>
 <dd><p>This service tool converts imagery data to feature class vector data.</p>
-<p>input_raster : Required string</p>
+<p>input_raster : Required. The input raster that will be converted to a feature dataset.</p>
 <dl class="docutils">
-<dt>field</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional string - field that specifies which value will be used for the conversion.</span><dd>It can be any integer or text value.
+<dt>field <span class="classifier-delimiter">:</span> <span class="classifier">Optional string - field that specifies which value will be used for the conversion.</span></dt>
+<dd>It can be any integer or a string field.
 A field containing floating-point values can only be used if the output is to a point dataset.
-The default choice is to use the Value field, which contains the value in each raster cell.</dd>
-<dt>output_type</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional string</span><dd>One of the following: [&#8216;Point&#8217;, &#8216;Line&#8217;, &#8216;Polygon&#8217;]</dd>
-</dl>
-<p>simplify_lines_or_polygons : Optional bool</p>
-<dl class="docutils">
-<dt>output_name</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Feature layer is created by the method and used as the output .</span><dd>You can pass in an existing Feature Service Item from your GIS to use that instead.
+Default is “Value”</dd>
+<dt>output_type <span class="classifier-delimiter">:</span> <span class="classifier">Optional string</span></dt>
+<dd>One of the following: [‘Point’, ‘Line’, ‘Polygon’]</dd>
+<dt>simplify <span class="classifier-delimiter">:</span> <span class="classifier">Optional bool, This option that specifies how the features should be smoothed. It is </span></dt>
+<dd>only available for line and polygon output.
+True, then the features will be smoothed out. This is the default.
+if False, then The features will follow exactly the cell boundaries of the raster dataset.</dd>
+<dt>output_name <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Feature layer is created by the method and used as the output .</span></dt>
+<dd>You can pass in an existing Feature Service Item from your GIS to use that instead.
 Alternatively, you can pass in the name of the output Feature Service that should be created by this method
 to be used as the output for the tool.
 A RuntimeError is raised if a service by that name already exists</dd>
@@ -967,13 +1119,13 @@ A RuntimeError is raised if a service by that name already exists</dd>
 <dd><p>input_raster : Required string</p>
 <p>output_cellsize : Optional string</p>
 <dl class="docutils">
-<dt>resampling_method</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional string</span><dd>One of the following: [&#8216;NEAREST&#8217;, &#8216;BILINEAR&#8217;, &#8216;CUBIC&#8217;, &#8216;MAJORITY&#8217;]</dd>
+<dt>resampling_method <span class="classifier-delimiter">:</span> <span class="classifier">Optional string</span></dt>
+<dd>One of the following: [‘NEAREST’, ‘BILINEAR’, ‘CUBIC’, ‘MAJORITY’]</dd>
 </dl>
 <p>clip_setting : Optional string</p>
 <dl class="docutils">
-<dt>output_name</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span><dd>You can pass in an existing Image Service Item from your GIS to use that instead.
+<dt>output_name <span class="classifier-delimiter">:</span> <span class="classifier">Optional. If not provided, an Image Service is created by the method and used as the output raster.</span></dt>
+<dd>You can pass in an existing Image Service Item from your GIS to use that instead.
 Alternatively, you can pass in the name of the output Image Service that should be created by this method to be used as the output for the tool.
 A RuntimeError is raised if a service by that name already exists</dd>
 </dl>
@@ -982,19 +1134,267 @@ A RuntimeError is raised if a service by that name already exists</dd>
 </dd></dl>
 
 </div>
+<div class="section" id="create-image-collection">
+<h2>create_image_collection<a class="headerlink" href="#create-image-collection" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt id="arcgis.raster.analytics.create_image_collection">
+<code class="descclassname">analytics.</code><code class="descname">create_image_collection</code><span class="sig-paren">(</span><em>image_collection</em>, <em>input_rasters</em>, <em>raster_type_name</em>, <em>raster_type_params=None</em>, <em>out_sr=None</em>, <em>context=None</em>, <em>gis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#arcgis.raster.analytics.create_image_collection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a collection of images that will participate in the ortho-mapping project.
+Provides provision to use input rasters by reference 
+and to specify image collection properties through context parameter.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Argument</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="row-even"><td>image_collection</td>
+<td><p class="first">Required, the name of the image collection to create.</p>
+<p>The image collection can be an existing image service, in
+which the function will create a mosaic dataset and the existing
+hosted image service will then point to the new mosaic dataset.</p>
+<p>If the image collection does not exist, a new multi-tenant
+service will be created.</p>
+<p class="last">This parameter can be the Item representing an existing image_collection
+or it can be a string representing the name of the image_collection
+(either existing or to be created.)</p>
+</td>
+</tr>
+<tr class="row-odd"><td>input_rasters</td>
+<td>Required, the list of input rasters to be added to
+the image collection being created. This parameter can
+be any one of the following:
+- List of portal Items of the images
+- An image service URL
+- Shared data path (this path must be accessible by the server)
+- Name of a folder on the portal</td>
+</tr>
+<tr class="row-even"><td>raster_type_name</td>
+<td>Required, the name of the raster type to use for adding data to
+the image collection.</td>
+</tr>
+<tr class="row-odd"><td>raster_type_params</td>
+<td><p class="first">Optional,  additional raster_type specific parameters.</p>
+<p>The process of add rasters to the image collection can be
+controlled by specifying additional raster type arguments.</p>
+<p class="last">The raster type parameters argument is a dictionary.</p>
+</td>
+</tr>
+<tr class="row-even"><td>out_sr</td>
+<td><p class="first">Optional, additional parameters of the service.</p>
+<p class="last">The following additional parameters can be specified:
+- Spatial reference of the image_collection; The well-known ID of
+the spatial reference or a spatial reference dictionary object for the
+input geometries.</p>
+</td>
+</tr>
+<tr class="row-odd"><td>context</td>
+<td><dl class="first last docutils">
+<dt>Optional, The context parameter is used to provide additional input parameters</dt>
+<dd><p class="first">{“image_collection_properties”: {“imageCollectionType”:”Satellite”},”use_by_ref”:True}</p>
+<p>use image_collection_properties key to set value for imageCollectionType.
+Note: the “imageCollectionType” property is important for image collection that will later on be adjusted by orthomapping system service.
+Based on the image collection type, the orthomapping system service will choose different algorithm for adjustment.
+Therefore, if the image collection is created by reference, the requester should set this
+property based on the type of images in the image collection using the following keywords.
+If the imageCollectionType is not set, it defaults to “UAV/UAS”</p>
+<p class="last">If use_input_rasters_by_ref is set to True, the data will not be uploaded. If it is not set, the default is False</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td>gis</td>
+<td>Optional GIS. The GIS on which this tool runs. If not specified, the active GIS is used.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The imagery layer item</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="add-image">
+<h2>add_image<a class="headerlink" href="#add-image" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt id="arcgis.raster.analytics.add_image">
+<code class="descclassname">analytics.</code><code class="descname">add_image</code><span class="sig-paren">(</span><em>image_collection</em>, <em>input_rasters</em>, <em>raster_type_name=None</em>, <em>raster_type_params=None</em>, <em>context=None</em>, <em>gis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#arcgis.raster.analytics.add_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a collection of images to an existing image_collection. Provides provision to use input rasters by reference 
+and to specify image collection properties through context parameter.</p>
+<p>It can be used when new data is available to be included in the same 
+orthomapping project. When new data is added to the image collection
+the entire image collection must be reset to the original state.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Argument</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="row-even"><td>input_rasters</td>
+<td>Required, the list of input rasters to be added to
+the image collection being created. This parameter can
+be any one of the following:
+- List of portal Items of the images
+- An image service URL
+- Shared data path (this path must be accessible by the server)
+- Name of a folder on the portal</td>
+</tr>
+<tr class="row-odd"><td>image_collection</td>
+<td><p class="first">Required, the item representing the image collection to add input_rasters to.</p>
+<p class="last">The image collection must be an existing image collection.
+This is the output image collection (mosaic dataset) item or url or uri</p>
+</td>
+</tr>
+<tr class="row-even"><td>raster_type_name</td>
+<td>Required, the name of the raster type to use for adding data to
+the image collection.</td>
+</tr>
+<tr class="row-odd"><td>raster_type_params</td>
+<td><p class="first">Optional,  additional raster_type specific parameters.</p>
+<p>The process of add rasters to the image collection can be
+controlled by specifying additional raster type arguments.</p>
+<p class="last">The raster type parameters argument is a dictionary.</p>
+</td>
+</tr>
+<tr class="row-even"><td>context</td>
+<td><dl class="first last docutils">
+<dt>Optional, The context parameter is used to provide additional input parameters</dt>
+<dd><p class="first">{“image_collection_properties”: {“imageCollectionType”:”Satellite”},”use_by_ref”:True}</p>
+<p>use image_collection_properties key to set value for imageCollectionType.
+Note: the “imageCollectionType” property is important for image collection that will later on be adjusted by orthomapping system service.
+Based on the image collection type, the orthomapping system service will choose different algorithm for adjustment.
+Therefore, if the image collection is created by reference, the requester should set this
+property based on the type of images in the image collection using the following keywords.
+If the imageCollectionType is not set, it defaults to “UAV/UAS”</p>
+<p class="last">If use_input_rasters_by_ref is set to True, the data will not be uploaded. If it is not set, the default is False</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="row-odd"><td>gis</td>
+<td>Optional GIS. The GIS on which this tool runs. If not specified, the active GIS is used.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The imagery layer item</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="delete-image">
+<h2>delete_image<a class="headerlink" href="#delete-image" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt id="arcgis.raster.analytics.delete_image">
+<code class="descclassname">analytics.</code><code class="descname">delete_image</code><span class="sig-paren">(</span><em>image_collection</em>, <em>where</em>, <em>gis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#arcgis.raster.analytics.delete_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete_image allows users to remove existing images from the image collection (mosaic dataset). 
+The function will not only delete the raster item in the mosaic dataset but also remove the 
+source image from the server.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="83%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Argument</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="row-even"><td>image_collection</td>
+<td>Required, the input image collection from which to delete images
+This can be the ‘itemID’ of an exisiting portal item or a url
+to an Image Service or a uri</td>
+</tr>
+<tr class="row-odd"><td>where</td>
+<td>Required string,  a SQL ‘where’ clause for selecting the images
+to be deleted from the image collection</td>
+</tr>
+<tr class="row-even"><td>gis</td>
+<td>Optional GIS. The GIS on which this tool runs. If not specified, the active GIS is used.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The imagery layer url</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="delete-image-collection">
+<h2>delete_image_collection<a class="headerlink" href="#delete-image-collection" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt id="arcgis.raster.analytics.delete_image_collection">
+<code class="descclassname">analytics.</code><code class="descname">delete_image_collection</code><span class="sig-paren">(</span><em>image_collection</em>, <em>gis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#arcgis.raster.analytics.delete_image_collection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the image collection. This service tool will delete the image collection
+image service, portal item and all the source image data it references to.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="83%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Argument</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="row-even"><td>image_collection</td>
+<td><p class="first">Required, the input image collection to delete.</p>
+<p>The image_collection can be a portal Item or an image service URL or a URI.</p>
+<p class="last">The image_collection must exist.</p>
+</td>
+</tr>
+<tr class="row-odd"><td>gis</td>
+<td>Optional GIS. The GIS on which this tool runs. If not specified, the active GIS is used.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Boolean value indicating whether the deletion was successful or not</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
 </div>
 
 
+
+           </div>
+           <div class="articleComments">
+            
            </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="arcgis.raster.functions.html" class="btn btn-neutral float-right" title="arcgis.raster.functions module" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="arcgis.raster.functions.html" class="btn btn-neutral float-right" title="arcgis.raster.functions module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="arcgis.raster.toc.html" class="btn btn-neutral" title="arcgis.raster module" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="arcgis.raster.toc.html" class="btn btn-neutral" title="arcgis.raster module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1025,10 +1425,11 @@ A RuntimeError is raised if a service by that name already exists</dd>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.2.1',
+            VERSION:'1.5.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
