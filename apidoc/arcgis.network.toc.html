@@ -8,9 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>arcgis.network module &mdash; arcgis 1.2.1 documentation</title>
+  <title>arcgis.network module &mdash; arcgis 1.5.0 documentation</title>
   
 
+  
+  
   
   
 
@@ -35,9 +37,18 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="arcgis 1.2.1 documentation" href="index.html"/>
+    <link rel="top" title="arcgis 1.5.0 documentation" href="index.html"/>
         <link rel="next" title="arcgis.network.analysis module" href="arcgis.network.analysis.html"/>
-        <link rel="prev" title="arcgis.raster.functions module" href="arcgis.raster.functions.html"/> 
+        <link rel="prev" title="arcgis.raster.orthomapping module" href="arcgis.raster.orthomapping.html"/>
+<!-- This code block is inserted close near the <head> tag. See http://bit.ly/2BHUQzB -->
+<!-- The point of this code block is to send us google analytics on website views -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJGGV5');</script>
+ 
+
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -46,6 +57,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -65,7 +77,7 @@
             
             
               <div class="version">
-                1.2.1
+                1.5.0
               </div>
             
           
@@ -86,7 +98,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">arcgis</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">arcgis</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="arcgis.gis.toc.html">arcgis.gis module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#gis">GIS</a></li>
@@ -96,6 +111,7 @@
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#datastore">Datastore</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#role">Role</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#layer">Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#groupapplication">GroupApplication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#contentmanager">ContentManager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#usermanager">UserManager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.gis.toc.html#groupmanager">GroupManager</a></li>
@@ -106,9 +122,13 @@
 <li class="toctree-l3"><a class="reference internal" href="arcgis.gis.admin.html">arcgis.gis.admin module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#agoladminmanager">AGOLAdminManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#portaladminmanager">PortalAdminManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#categorymanager">CategoryManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#collaborationmanager">CollaborationManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#collaboration">Collaboration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#creditmanager">CreditManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#license">License</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#licensemanager">LicenseManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#identityprovidermanager">IdentityProviderManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#passwordpolicy">PasswordPolicy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#portalresourcemanager">PortalResourceManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.admin.html#ux">UX</a></li>
@@ -131,6 +151,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.gis.server.html">arcgis.gis.server module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#server">Server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#module-arcgis.gis.server.catalog">ServicesDirectory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#service">Service</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#machine">Machine</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#report">Report</a></li>
@@ -148,6 +169,10 @@
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#systemmanager">SystemManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#sitemanager">SiteManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#directorymanager">DirectoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#configurationstore">ConfigurationStore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#jobs">Jobs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#serverdirectory">ServerDirectory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.gis.server.html#serverproperties">ServerProperties</a></li>
 </ul>
 </li>
 </ul>
@@ -159,9 +184,11 @@
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#analysis-extent">analysis_extent</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#out-spatial-reference">out_spatial_reference</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#process-spatial-reference">process_spatial_reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#output-datastore">output_datastore</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#return-z">return_z</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#return-m">return_m</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#verbose">verbose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.env.html#default-aggregation-styles">default_aggregation_styles</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="arcgis.features.toc.html">arcgis.features module</a><ul>
@@ -171,6 +198,8 @@
 <li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#featurelayercollection">FeatureLayerCollection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#featureset">FeatureSet</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#featurecollection">FeatureCollection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#arcgis-features-geoaccessor">arcgis.features.GeoAccessor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#arcgis-features-geoseriesaccessor">arcgis.features.GeoSeriesAccessor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#spatialdataframe">SpatialDataFrame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.features.toc.html#submodules">Submodules</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.features.analysis.html">arcgis.features.analysis module</a><ul>
@@ -203,6 +232,7 @@
 <li class="toctree-l3"><a class="reference internal" href="arcgis.features.analyze_patterns.html">arcgis.features.analyze_patterns module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.analyze_patterns.html#calculate-density">calculate_density</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.analyze_patterns.html#find-hot-spots">find_hot_spots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.features.analyze_patterns.html#find-outliers">find_outliers</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.analyze_patterns.html#interpolate-points">interpolate_points</a></li>
 </ul>
 </li>
@@ -229,6 +259,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.features.summarize_data.html">arcgis.features.summarize_data module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.summarize_data.html#aggregate-points">aggregate_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.features.summarize_data.html#join-features">join_features</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.summarize_data.html#summarize-nearby">summarize_nearby</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.features.summarize_data.html#summarize-within">summarize_within</a></li>
 </ul>
@@ -260,6 +291,9 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="arcgis.raster.toc.html">arcgis.raster module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.raster.toc.html#imagerylayer">ImageryLayer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.raster.toc.html#rastercatalogitem">RasterCatalogItem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.raster.toc.html#rastermanager">RasterManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.raster.toc.html#imagerytilemanager">ImageryTileManager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.raster.toc.html#submodules">Submodules</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.raster.analytics.html">arcgis.raster.analytics module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.analytics.html#get-datastores">get_datastores</a></li>
@@ -275,6 +309,10 @@
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.analytics.html#convert-feature-to-raster">convert_feature_to_raster</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.analytics.html#convert-raster-to-feature">convert_raster_to_feature</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.analytics.html#copy-raster">copy_raster</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.analytics.html#create-image-collection">create_image_collection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.analytics.html#add-image">add_image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.analytics.html#delete-image">delete_image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.analytics.html#delete-image-collection">delete_image_collection</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.raster.functions.html">arcgis.raster.functions module</a><ul>
@@ -307,6 +345,9 @@
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#classify">classify</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#clip">clip</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#colormap">colormap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#colormap-to-rgb">colormap_to_rgb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#colorspace-conversion">colorspace_conversion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#complex">complex</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#composite-band">composite_band</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#con">con</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#contrast-brightness">contrast_brightness</a></li>
@@ -323,16 +364,18 @@
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#exp2">exp2</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#expression">expression</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#extract-band">extract_band</a></li>
-<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#float">float</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#float">FLOAT</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#float-divide">float_divide</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#floor-divide">floor_divide</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#gemi">gemi</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#geometric">geometric</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#grayscale">grayscale</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#greater-than">greater_than</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#greater-than-equal">greater_than_equal</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#gvitm">gvitm</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#hillshade">hillshade</a></li>
-<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#int">int</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#identity">identity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#int">INT</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#is-null">is_null</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#less-than">less_than</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#less-than-equal">less_than_equal</a></li>
@@ -352,14 +395,16 @@
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#mod">mod</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#mode">mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#msavi">msavi</a></li>
-<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#multiply">multiply</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#multiply">MULTIPLY</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#ndvi">ndvi</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#negate">negate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#not-equal">not_equal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#pansharpen">pansharpen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#plus">plus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#power">power</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#pvi">pvi</a></li>
-<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#range">range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#cellstats-range">cellstats_range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#raster-calculator">raster_calculator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#remap">remap</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#resample">resample</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#round-down">round_down</a></li>
@@ -371,22 +416,64 @@
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#sin">sin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#sinh">sinh</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#slope">slope</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#spectral-conversion">spectral_conversion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#speckle">speckle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#sqrt">sqrt</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#square">square</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#focal-statistics">focal_statistics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#statistics-histogram">statistics_histogram</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#std">std</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#stretch">stretch</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#sultan">sultan</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#sum">sum</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#tan">tan</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#tanh">tanh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#tasseled-cap">tasseled_cap</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#threshold">threshold</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#times">times</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#transpose-bits">transpose_bits</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#tsavi">tsavi</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#unit-conversion">unit_conversion</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#variety">variety</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#vector-field">vector_field</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#vector-field-renderer">vector_field_renderer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#weighted-overlay">weighted_overlay</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.html#weighted-sum">weighted_sum</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcgis.raster.functions.gbl.html">arcgis.raster.functions.gbl module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#cost-allocation">cost_allocation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#cost-distance">cost_distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#euclidean-allocation">euclidean_allocation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#euclidean-distance">euclidean_distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#fill">fill</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#flow-accumulation">flow_accumulation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#flow-distance">flow_distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#flow-direction">flow_direction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#least-cost-path">least_cost_path</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#nibble">nibble</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#stream-link">stream_link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#watershed">watershed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.functions.gbl.html#zonal-statistics">zonal_statistics</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcgis.raster.orthomapping.html">arcgis.raster.orthomapping module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#is-supported">is_supported</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#compute-sensor-model">compute_sensor_model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#alter-processing-states">alter_processing_states</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#get-processing-states">get_processing_states</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#match-control-points">match_control_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#color-correction">color_correction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#compute-control-points">compute_control_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#compute-seamlines">compute_seamlines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#edit-control-points">edit_control_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#generate-dem">generate_dem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#generate-orthomosaic">generate_orthomosaic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#generate-report">generate_report</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#query-camera-info">query_camera_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#query-control-points">query_control_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#reset-image-collection">reset_image_collection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.raster.orthomapping.html#compute-spatial-reference-factory-code">compute_spatial_reference_factory_code</a></li>
 </ul>
 </li>
 </ul>
@@ -425,15 +512,22 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.geoanalytics.find_locations.html">arcgis.geoanalytics.find_locations module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.find_locations.html#detect-incidents">detect_incidents</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.find_locations.html#find-similar-locations">find_similar_locations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.find_locations.html#geocode-locations">geocode_locations</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html">arcgis.geoanalytics.manage_data module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html#append-data">append_data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html#calculate-fields">calculate_fields</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html#clip-layer">clip_layer</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html#copy-to-data-store">copy_to_data_store</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.manage_data.html#overlay-data">overlay_data</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html">arcgis.geoanalytics.summarize_data module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html#aggregate-points">aggregate_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html#build-multivariable-grid">build_multivariable_grid</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html#join-features">join_features</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html#reconstruct-tracks">reconstruct_tracks</a></li>
 <li class="toctree-l4"><a class="reference internal" href="arcgis.geoanalytics.summarize_data.html#summarize-attributes">summarize_attributes</a></li>
@@ -452,9 +546,20 @@
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#geocoder">Geocoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#get-geocoders">get_geocoders</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#geocode">geocode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#geocode-from-items">geocode_from_items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#analyze-geocode-input">analyze_geocode_input</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#reverse-geocode">reverse_geocode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#batch-geocode">batch_geocode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.geocoding.html#suggest">suggest</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcgis.geoenrichment.html">arcgis.geoenrichment module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#country">Country</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#get-countries">get_countries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#create-report">create_report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#enrich">enrich</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#find-businesses">find_businesses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.geoenrichment.html#standard-geography-query">standard_geography_query</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="arcgis.geometry.html">arcgis.geometry module</a><ul>
@@ -511,10 +616,12 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="arcgis.mapping.html">arcgis.mapping module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#webmap">WebMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#offlinemapareamanager">OfflineMapAreaManager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#webscene">WebScene</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#mapimagelayer">MapImageLayer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#mapimagelayermanager">MapImageLayerManager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#vectortilelayer">VectorTileLayer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#scenelayer">SceneLayer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#export-map">export_map</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arcgis.mapping.html#get-layout-templates">get_layout_templates</a></li>
 </ul>
@@ -531,6 +638,31 @@
 <li class="toctree-l2"><a class="reference internal" href="arcgis.widgets.html#mapview">MapView</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="arcgis.apps.html">arcgis.apps module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.apps.html#build-collector-url">build_collector_url</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.apps.html#build-explorer-url">build_explorer_url</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.apps.html#build-navigator-url">build_navigator_url</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.apps.html#build-survey123-url">build_survey123_url</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcgis.apps.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcgis.apps.workforce.html">arcgis.apps.workforce module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#assignment">Assignment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#assignmenttype">AssignmentType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#attachment">Attachment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#dispatcher">Dispatcher</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#project">Project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#track">Track</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#worker">Worker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.workforce.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcgis.apps.storymap.html">arcgis.apps.storymap module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcgis.apps.storymap.html#journalstorymap">JournalStoryMap</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             
@@ -543,8 +675,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">arcgis</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">arcgis</a>
+        
       </nav>
 
 
@@ -553,28 +687,48 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>arcgis.network module</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>arcgis.network module</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/arcgis.network.toc.txt" rel="nofollow"> View page source</a>
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
+<!-- This code block is inserted close near the <body> tag. See http://bit.ly/2BHUQzB -->
+<!-- The point of this code block is to send us google analytics on website views -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJGGV5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
   <div class="section" id="module-arcgis.network">
 <span id="arcgis-network-module"></span><h1>arcgis.network module<a class="headerlink" href="#module-arcgis.network" title="Permalink to this headline">¶</a></h1>
 <p>The arcgis.network module contains classes and functions for network analysis. Network layers and analysis can be used
@@ -614,144 +768,216 @@ as well as some attributes unique to Route Network Layer only.</p>
 <dd><p>The solve operation is performed on a network layer resource.
 The solve operation is supported on a network layer whose layerType
 is esriNAServerRouteLayer. You can provide arguments to the solve
-route operation as query parameters.
-Inputs:</p>
-<blockquote>
-<div><dl class="docutils">
-<dt>stops - The set of stops loaded as network locations during analysis.</dt>
-<dd>Stops can be specified using a simple comma / semi-colon
-based syntax or as a JSON structure. If stops are not
-specified, preloaded stops from the map document are used in
-the analysis.</dd>
-<dt>barriers - The set of barriers loaded as network locations during</dt>
-<dd>analysis. Barriers can be specified using a simple comma
-/ semi-colon based syntax or as a JSON structure. If
-barriers are not specified, preloaded barriers from the
-map document are used in the analysis. If an empty json
-object is passed (&#8216;{}&#8217;) preloaded barriers are ignored.</dd>
-<dt>polylineBarriers - The set of polyline barriers loaded as network</dt>
-<dd>locations during analysis. If polyline barriers
-are not specified, preloaded polyline barriers
-from the map document are used in the analysis.
-If an empty json object is passed (&#8216;{}&#8217;)
-preloaded polyline barriers are ignored.</dd>
-<dt>polygonBarriers - The set of polygon barriers loaded as network</dt>
-<dd>locations during analysis. If polygon barriers
-are not specified, preloaded polygon barriers
-from the map document are used in the analysis.
-If an empty json object is passed (&#8216;{}&#8217;) preloaded
-polygon barriers are ignored.</dd>
-<dt>travelMode - Travel modes provide override values that help you</dt>
-<dd>quickly and consistently model a vehicle or mode of
-transportation. The chosen travel mode must be
-preconfigured on the network dataset that the routing
-service references.</dd>
-<dt>attributeParameterValues - A set of attribute parameter values that</dt>
-<dd>can be parameterized to determine which
-network elements can be used by a vehicle.</dd>
-<dt>returnDirections - If true, directions will be generated and returned</dt>
-<dd>with the analysis results. Default is true.</dd>
-<dt>returnRoutes - If true, routes will be returned with the analysis</dt>
-<dd>results. Default is true.</dd>
-<dt>returnStops -  If true, stops will be returned with the analysis</dt>
-<dd>results. Default is false.</dd>
-<dt>returnBarriers -  If true, barriers will be returned with the analysis</dt>
-<dd>results. Default is false.</dd>
-<dt>returnPolylineBarriers -  If true, polyline barriers will be returned</dt>
-<dd>with the analysis results. Default is false.</dd>
-<dt>returnPolygonBarriers - If true, polygon barriers will be returned with</dt>
-<dd>the analysis results. Default is false.</dd>
-<dt>outSR - The spatial reference of the geometries returned with the</dt>
-<dd>analysis results.</dd>
-<dt>ignoreInvalidLocations - If true, the solver will ignore invalid</dt>
-<dd>locations. Otherwise, it will raise an error.
-The default is as defined in the network layer.</dd>
-<dt>outputLines - The type of output lines to be generated in the result.</dt>
-<dd>The default is as defined in the network layer.</dd>
-<dt>findBestSequence - If true, the solver should re-sequence the route in</dt>
-<dd>the optimal order. The default is as defined in the
-network layer.</dd>
-<dt>preserveFirstStop - If true, the solver should keep the first stop</dt>
-<dd>fixed in the sequence. The default is as defined
-in the network layer.</dd>
-<dt>preserveLastStop - If true, the solver should keep the last stop fixed</dt>
-<dd>in the sequence. The default is as defined in the
-network layer.</dd>
-<dt>useTimeWindows - If true, the solver should consider time windows.</dt>
-<dd>The default is as defined in the network layer.</dd>
-<dt>startTime - The time the route begins. If not specified, the solver</dt>
-<dd>will use the default as defined in the network layer.</dd>
-</dl>
-<p>startTimeIsUTC - The time zone of the startTime parameter.
-accumulateAttributeNames - The list of network attribute names to be</p>
-<blockquote>
-<div>accumulated with the analysis. The default is
-as defined in the network layer. The value
-should be specified as a comma separated list
-of attribute names. You can also specify a
-value of none to indicate that no network
-attributes should be accumulated.</div></blockquote>
-<dl class="docutils">
-<dt>impedanceAttributeName - The network attribute name to be used as the</dt>
-<dd>impedance attribute in analysis. The default is
-as defined in the network layer.</dd>
-<dt>restrictionAttributeNames -The list of network attribute names to be</dt>
-<dd>used as restrictions with the analysis. The
-default is as defined in the network layer.
-The value should be specified as a comma
-separated list of attribute names. You can
-also specify a value of none to indicate that
-no network attributes should be used as
-restrictions.</dd>
-<dt>restrictUTurns -  Specifies how U-Turns should be restricted in the</dt>
-<dd>analysis. The default is as defined in the network
-layer. Values: esriNFSBAllowBacktrack |
-esriNFSBAtDeadEndsOnly | esriNFSBNoBacktrack |
-esriNFSBAtDeadEndsAndIntersections</dd>
-<dt>useHierarchy -  If true, the hierarchy attribute for the network should</dt>
-<dd>be used in analysis. The default is as defined in the
-network layer.</dd>
-<dt>directionsLanguage - The language to be used when computing directions.</dt>
-<dd>The default is as defined in the network layer. The
-list of supported languages can be found in REST
-layer description.</dd>
-<dt>directionsOutputType -  Defines content, verbosity of returned</dt>
-<dd>directions. The default is esriDOTStandard.
-Values: esriDOTComplete | esriDOTCompleteNoEvents
-| esriDOTInstructionsOnly | esriDOTStandard |
-esriDOTSummaryOnly</dd>
-<dt>directionsStyleName - The style to be used when returning the directions.</dt>
-<dd>The default is as defined in the network layer. The
-list of supported styles can be found in REST
-layer description.</dd>
-<dt>directionsLengthUnits - The length units to use when computing directions.</dt>
-<dd>The default is as defined in the network layer.
-Values: esriNAUFeet | esriNAUKilometers |
-esriNAUMeters | esriNAUMiles |
-esriNAUNauticalMiles | esriNAUYards |
-esriNAUUnknown</dd>
-<dt>directionsTimeAttributeName - The name of network attribute to use for</dt>
-<dd>the drive time when computing directions.
-The default is as defined in the network
-layer.</dd>
-<dt>outputGeometryPrecision -  The precision of the output geometry after</dt>
-<dd>generalization. If 0, no generalization of
-output geometry is performed. The default is
-as defined in the network service
-configuration.</dd>
-<dt>outputGeometryPrecisionUnits - The units of the output geometry</dt>
-<dd>precision. The default value is
-esriUnknownUnits. Values: esriUnknownUnits
-| esriCentimeters | esriDecimalDegrees |
-esriDecimeters | esriFeet | esriInches |
-esriKilometers | esriMeters | esriMiles |
-esriMillimeters | esriNauticalMiles |
-esriPoints | esriYards</dd>
-<dt>returnZ - If true, Z values will be included in the returned routes and</dt>
-<dd>compressed geometry if the network dataset is Z-aware.
-The default is false.</dd>
-</dl>
+route operation as query parameters.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Argument</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr class="row-even"><td>stops</td>
+<td>Required Points/FeatureSet. The set of stops loaded as network
+locations during analysis. Stops can be specified using a simple
+comma / semi-colon based syntax or as a JSON structure. If stops are
+not specified, preloaded stops from the map document are used in the
+analysis.</td>
+</tr>
+<tr class="row-odd"><td>barriers</td>
+<td>Optional Point/FeatureSet. The set of barriers loaded as network
+locations during analysis. Barriers can be specified using a simple
+comma/semi-colon based syntax or as a JSON structure. If barriers
+are not specified, preloaded barriers from the map document are used
+in the analysis. If an empty json object is passed (‘{}’) preloaded
+barriers are ignored.</td>
+</tr>
+<tr class="row-even"><td>polyline_barriers</td>
+<td>Optional Polyline/FeatureSet. The set of polyline barriers loaded
+as network locations during analysis. If polyline barriers are not
+specified, preloaded polyline barriers from the map document are
+used in the analysis. If an empty json object is passed (‘{}’)
+preloaded polyline barriers are ignored.</td>
+</tr>
+<tr class="row-odd"><td>polygon_barriers</td>
+<td>Optional Polygon/FeatureSet. The set of polygon barriers loaded as
+network locations during analysis. If polygon barriers are not
+specified, preloaded polygon barriers from the map document are used
+in the analysis. If an empty json object is passed (‘{}’) preloaded
+polygon barriers are ignored.</td>
+</tr>
+<tr class="row-even"><td>travel_mode</td>
+<td>Optional string. Travel modes provide override values that help you
+quickly and consistently model a vehicle or mode of transportation.
+The chosen travel mode must be preconfigured on the network dataset
+that the routing service references.</td>
+</tr>
+<tr class="row-odd"><td>attribute_parameter_values</td>
+<td>Optional string/list.  A set of attribute parameter values that can be
+parameterized to determine which network elements can be used by a
+vehicle.</td>
+</tr>
+<tr class="row-even"><td>return_directions</td>
+<td>Optional boolean. If true, directions will be generated and returned
+with the analysis results. Default is true.</td>
+</tr>
+<tr class="row-odd"><td>return_routes</td>
+<td>Optional boolean. If true, routes will be returned with the analysis
+results. Default is true.</td>
+</tr>
+<tr class="row-even"><td>return_stops</td>
+<td>Optional boolean.  If true, stops will be returned with the analysis
+results. Default is false.</td>
+</tr>
+<tr class="row-odd"><td>return_barriers</td>
+<td>Optional boolean.  If true, barriers will be returned with the
+analysis results. Default is false.</td>
+</tr>
+<tr class="row-even"><td>return_polyline_barriers</td>
+<td>Optional boolean. If true, polyline barriers will be returned with
+the analysis results. Default is false.</td>
+</tr>
+<tr class="row-odd"><td>return_polygon_barriers</td>
+<td>Optional boolean. If true, polygon barriers will be returned with
+the analysis results. Default is false.</td>
+</tr>
+<tr class="row-even"><td>out_sr</td>
+<td>Optional Integer. The spatial reference of the geometries returned
+with the analysis results.</td>
+</tr>
+<tr class="row-odd"><td>ignore_invalid_locations</td>
+<td>Optional boolean. - If true, the solver will ignore invalid
+locations. Otherwise, it will raise an error. The default is as
+defined in the network layer.</td>
+</tr>
+<tr class="row-even"><td>output_lines</td>
+<td>The type of output lines to be generated in the result. The default
+is as defined in the network layer.</td>
+</tr>
+<tr class="row-odd"><td>find_best_sequence</td>
+<td>Optional boolean. If true, the solver should re-sequence the route in
+the optimal order. The default is as defined in the network layer.</td>
+</tr>
+<tr class="row-even"><td>preserve_first_stop</td>
+<td>Optional boolean. If true, the solver should keep the first stop
+fixed in the sequence. The default is as defined in the network
+layer.</td>
+</tr>
+<tr class="row-odd"><td>preserve_last_stop</td>
+<td>Optional boolean. If true, the solver should keep the last stop fixed
+in the sequence. The default is as defined in the network layer.</td>
+</tr>
+<tr class="row-even"><td>use_time_window</td>
+<td>Optional boolean. If true, the solver should consider time windows.
+The default is as defined in the network layer.</td>
+</tr>
+<tr class="row-odd"><td>start_time</td>
+<td>Optional string. The time the route begins. If not specified, the
+solver will use the default as defined in the network layer.</td>
+</tr>
+<tr class="row-even"><td>start_time_is_utc</td>
+<td>Optional boolean. The time zone of the startTime parameter.</td>
+</tr>
+<tr class="row-odd"><td>accumulate_attribute_names</td>
+<td>Optional string. A list of network attribute names to be accumulated
+with the analysis. The default is as defined in the network layer.
+The value should be specified as a comma separated list of attribute
+names. You can also specify a value of none to indicate that no
+network attributes should be accumulated.</td>
+</tr>
+<tr class="row-even"><td>impedance_attribute_name</td>
+<td>Optional string. The network attribute name to be used as the impedance
+attribute in analysis. The default is as defined in the network layer.</td>
+</tr>
+<tr class="row-odd"><td>restriction_attribute_names</td>
+<td>Optional string. -The list of network attribute names to be
+used as restrictions with the analysis. The default is as defined in
+the network layer. The value should be specified as a comma
+separated list of attribute names. You can also specify a value of
+none to indicate that no network attributes should be used as
+restrictions.</td>
+</tr>
+<tr class="row-even"><td>restrict_u_turns</td>
+<td><p class="first">Optional boolean. Specifies how U-Turns should be restricted in the
+analysis. The default is as defined in the network layer.
+Values: esriNFSBAllowBacktrack | esriNFSBAtDeadEndsOnly |</p>
+<blockquote class="last">
+<div>esriNFSBNoBacktrack | esriNFSBAtDeadEndsAndIntersections</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>use_hierarchy</td>
+<td>Optional boolean.  If true, the hierarchy attribute for the network
+should be used in analysis. The default is as defined in the network
+layer.</td>
+</tr>
+<tr class="row-even"><td>directions_language</td>
+<td>Optional string. The language to be used when computing directions.
+The default is as defined in the network layer. The list of supported
+languages can be found in REST layer description.</td>
+</tr>
+<tr class="row-odd"><td>directions_output_type</td>
+<td><p class="first">Optional string.  Defines content, verbosity of returned directions.
+The default is esriDOTStandard.
+Values: esriDOTComplete | esriDOTCompleteNoEvents</p>
+<blockquote class="last">
+<div><div class="line-block">
+<div class="line">esriDOTInstructionsOnly | esriDOTStandard |</div>
+</div>
+<p>esriDOTSummaryOnly</p>
 </div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>directions_style_name</td>
+<td>Optional string. The style to be used when returning the directions.
+The default is as defined in the network layer. The list of
+supported styles can be found in REST layer description.</td>
+</tr>
+<tr class="row-odd"><td>directions_length_units</td>
+<td><p class="first">Optional string. The length units to use when computing directions.
+The default is as defined in the network layer.
+Values: esriNAUFeet | esriNAUKilometers | esriNAUMeters |</p>
+<blockquote class="last">
+<div>esriNAUMiles | esriNAUNauticalMiles | esriNAUYards |
+esriNAUUnknown</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td>directions_time_attribute_name</td>
+<td>Optional string. The name of network attribute to use for the drive
+time when computing directions. The default is as defined in the network
+layer.</td>
+</tr>
+<tr class="row-odd"><td>output_geometry_precision</td>
+<td>Optional float.  The precision of the output geometry after
+generalization. If 0, no generalization of output geometry is
+performed. The default is as defined in the network service
+configuration.</td>
+</tr>
+<tr class="row-even"><td>output_geometry_precision_units</td>
+<td><p class="first">Optional string. The units of the output geometry precision. The
+default value is esriUnknownUnits.
+Values: esriUnknownUnits | esriCentimeters | esriDecimalDegrees |</p>
+<blockquote class="last">
+<div>esriDecimeters | esriFeet | esriInches | esriKilometers |
+esriMeters | esriMiles | esriMillimeters |
+esriNauticalMiles | esriPoints | esriYards</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td>return_z</td>
+<td>Optional boolean. If true, Z values will be included in the returned
+routes and compressed geometry if the network dataset is Z-aware.
+The default is false.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 </dd></dl>
@@ -781,25 +1007,25 @@ a simple comma / semi-colon based syntax or as a
 JSON structure. If facilities are not specified,
 preloaded facilities from the map document are used
 in the analysis. If an empty json object is passed
-(&#8216;{}&#8217;) preloaded facilities are ignored.</dd>
+(‘{}’) preloaded facilities are ignored.</dd>
 <dt>barriers - The set of barriers loaded as network locations during</dt>
 <dd>analysis. Barriers can be specified using a simple
 comma/semicolon-based syntax or as a JSON structure.
 If barriers are not specified, preloaded barriers from
 the map document are used in the analysis. If an empty
-json object is passed (&#8216;{}&#8217;), preloaded barriers are
+json object is passed (‘{}’), preloaded barriers are
 ignored.</dd>
 <dt>polylineBarriers - The set of polyline barriers loaded as network</dt>
 <dd>locations during analysis. If polyline barriers
 are not specified, preloaded polyline barriers
 from the map document are used in the analysis.
-If an empty json object is passed (&#8216;{}&#8217;),
+If an empty json object is passed (‘{}’),
 preloaded polyline barriers are ignored.</dd>
 <dt>polygonBarriers - The set of polygon barriers loaded as network</dt>
 <dd>locations during analysis. If polygon barriers
 are not specified, preloaded polygon barriers
 from the map document are used in the analysis.
-If an empty json object is passed (&#8216;{}&#8217;),
+If an empty json object is passed (‘{}’),
 preloaded polygon barriers are ignored.</dd>
 <dt>travelMode - Travel modes provide override values that help you</dt>
 <dd>quickly and consistently model a vehicle or mode of
@@ -948,18 +1174,18 @@ in the analysis.</dd>
 / semi-colon based syntax or as a JSON structure. If
 barriers are not specified, preloaded barriers from the
 map document are used in the analysis. If an empty json
-object is passed (&#8216;{}&#8217;) preloaded barriers are ignored.</dd>
+object is passed (‘{}’) preloaded barriers are ignored.</dd>
 <dt>polylineBarriers - The set of polyline barriers loaded as network</dt>
 <dd>locations during analysis. If polyline barriers
 are not specified, preloaded polyline barriers
 from the map document are used in the analysis.
-If an empty json object is passed (&#8216;{}&#8217;)
+If an empty json object is passed (‘{}’)
 preloaded polyline barriers are ignored.</dd>
 <dt>polygonBarriers - The set of polygon barriers loaded as network</dt>
 <dd>locations during analysis. If polygon barriers
 are not specified, preloaded polygon barriers
 from the map document are used in the analysis.
-If an empty json object is passed (&#8216;{}&#8217;) preloaded
+If an empty json object is passed (‘{}’) preloaded
 polygon barriers are ignored.</dd>
 <dt>travelMode - Travel modes provide override values that help you</dt>
 <dd>quickly and consistently model a vehicle or mode of
@@ -1063,8 +1289,8 @@ esriPoints | esriYards</dd>
 <dt>timeOfDayIsUTC - The time zone of the timeOfDay parameter. By setting</dt>
 <dd>timeOfDayIsUTC to true, the timeOfDay parameter refers
 to Coordinated Universal Time (UTC). Choose this option
-if you want to find what&#8217;s nearest for a specific time,
-such as now, but aren&#8217;t certain in which time zone the
+if you want to find what’s nearest for a specific time,
+such as now, but aren’t certain in which time zone the
 facilities or incidents will be located.</dd>
 <dt>timeOfDayUsage - Defines the way timeOfDay value is used. The default</dt>
 <dd>is as defined in the network layer.
@@ -1096,7 +1322,7 @@ service area layers and closest facility layers.</p>
 <dl class="classmethod">
 <dt id="arcgis.network.NetworkDataset.fromitem">
 <em class="property">classmethod </em><code class="descname">fromitem</code><span class="sig-paren">(</span><em>item</em><span class="sig-paren">)</span><a class="headerlink" href="#arcgis.network.NetworkDataset.fromitem" title="Permalink to this definition">¶</a></dt>
-<dd><p>Creates a network dataset from a &#8216;Network Analysis Service&#8217; Item in the GIS</p>
+<dd><p>Creates a network dataset from a ‘Network Analysis Service’ Item in the GIS</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -1134,16 +1360,20 @@ service area layers and closest facility layers.</p>
 </div>
 
 
+
+           </div>
+           <div class="articleComments">
+            
            </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="arcgis.network.analysis.html" class="btn btn-neutral float-right" title="arcgis.network.analysis module" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="arcgis.network.analysis.html" class="btn btn-neutral float-right" title="arcgis.network.analysis module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="arcgis.raster.functions.html" class="btn btn-neutral" title="arcgis.raster.functions module" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="arcgis.raster.orthomapping.html" class="btn btn-neutral" title="arcgis.raster.orthomapping module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1174,10 +1404,11 @@ service area layers and closest facility layers.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.2.1',
+            VERSION:'1.5.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
